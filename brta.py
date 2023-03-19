@@ -6,12 +6,12 @@ class BRTA:
     def take_driving_test(self, email):
         score = random.randint(0, 100)
         if score >= 33:
-            print('Congrats, you have passed', score)
+            # print('Congrats, you have passed', score)
             license_number = random.randint(5000, 9999)
             self.__license[email] = license_number
             return license_number
         else:
-            print("You failed", score)
+            # print("You failed", score)
             return False
 
     def validate_license(self, email, license):
